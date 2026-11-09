@@ -1,0 +1,4 @@
+out/
+output/outbreak.html
+*.class
+.DS_Store
