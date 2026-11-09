@@ -71,7 +71,7 @@ Here n and m are the lengths of the two strings (or the text and pattern), k is 
 | Edit distance | O(n*m) | O(n*m) | A table with n*m cells |
 | LCS | O(n*m) | O(n*m) | A table with n*m cells |
 | Prefix function and KMP | O(n+m) | O(m+h) | The text is scanned once, and h hits are saved |
-| Rabin-Karp (shared words) | Average O(n+m+k), worst O(n*m*k) | O(m) | Hashes update in O(1), but collisions need comparisons |
+| Rabin-Karp (shared words) | O(n+m+c*k), worst O(n*m*k) | O(m) | Rolling hash is O(1) per step; c is the number of candidate comparisons |
 | Tree DP and longest chain | O(v) | O(v) | Each person and link is visited a constant number of times |
 
 ## Run the project
